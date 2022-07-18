@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@400;500&display=swap");
+* {
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+.image {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.card div.card-header {
+  background-color: rgb(108, 123, 255);
+  color: white;
+}
+.card {
+  position: absolute;
+  top: 24%;
+  left: 58%;
+  width: 350px;
+  height: auto;
+}
+.row ul li input.btn {
+  background-color: rgb(108, 123, 255);
+  color: white;
+  width: 100%;
+}
+.help {
+  font-size: small;
+  margin-top: 5px;
+}
+.help ul li a.haveAccount {
+  margin-right: 37px;
+}
+.row ul li input.btn:hover {
+  background-color: rgb(54, 74, 252);
+}
+.help {
+  padding: 0 5px;
+}
+.prem-text {
+  margin-right: 17px;
+  color: rgb(250, 169, 19);
+  text-decoration: none;
+}
+.prem-text:hover {
+  color: rgb(197, 197, 197);
+}
+.container nav div ul li svg.bi {
+  margin-left: 7px;
+  color: rgb(250, 169, 19);
+}
+.container nav div ul.premium-content {
+  /* position: absolute;
+  left: 90%; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+.btn {
+  background-color: rgb(108, 123, 255);
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(54, 74, 252);
+}
+
+/* span check */
+/* .plusSpan + span {
+  position: relative;
+}
+
+span::before {
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+input:invalid:focus {
+  border-color: rgb (54, 74, 252);
+}
+
+input:invalid + span::before {
+  content: "✖";
+  color: red;
+}
+input:valid + span::before {
+  content: "✓";
+  color: green;
+} */

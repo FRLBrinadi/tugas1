@@ -1,0 +1,209 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand mb-0 fs-5 fw-bold">Influx</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav fs-6 align-items-baseline">
+          <li class="nav-item">
+            <a
+              onmouseover="this.style.color='blue'"
+              onmouseleave="this.style.color='black'"
+              class="nav-link active"
+              aria-current="page"
+              href=""
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              onmouseover="this.style.color='blue'"
+              onmouseleave="this.style.color='black'"
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              >Princing</a
+            >
+          </li>
+
+          <div class="">
+            <ul
+              class="premium-content d-flex align-items-baseline align-items-baseline"
+            >
+              <li class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bookmark-plus-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"
+                  />
+                </svg>
+              </li>
+              <li><a class="prem-text" href="">Premium</a></li>
+              <li class="nav-item">
+                <button
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Go to Admin
+                </button>
+              </li>
+              <div></div>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="image">
+  <img src="/assets/img/undrawReg2.svg" width="550" height="auto" />
+</div>
+<div class="card">
+  <div class="card-header text-center fs-3 fw-bold">Influx</div>
+  <div class="card-body">
+    <p class="mx-1 my-0 plusSpan">e-mail</p>
+    <span></span>
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        [(ngModel)]="contact.email"
+        id="e_mail"
+        name="e_mail"
+        class="form-control"
+        placeholder=""
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+        required=""
+      />
+      <span></span>
+    </div>
+    <p class="mx-1 my-0 plusSpan">Name</p>
+    <span></span>
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        [(ngModel)]="contact.name"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder=""
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+        required=""
+      />
+      <span></span>
+    </div>
+    <p class="mx-1 my-0 plusSpan">Password</p>
+    <span></span>
+    <div class="input-group mb-3">
+      <input
+        type="password"
+        [(ngModel)]="contact.password"
+        id="password"
+        name="password"
+        class="form-control"
+        placeholder=""
+        aria-label="Password"
+        aria-describedby="basic-addon1"
+        required=""
+      />
+      <span></span>
+    </div>
+    <div class="link">
+      <div class="row">
+        <ul class="links list-unstyled">
+          <li>
+            <input
+              class="btn"
+              type="submit"
+              value="Register"
+              [disabled]="!contact.email || !contact.name || !contact.password"
+              (click)="CreateRecord()"
+            />
+          </li>
+          <li>
+            <div class="help d-flex justify-content-between">
+              <a class="haveAccount" [routerLink]="['/login']"
+                >have an account?</a
+              >
+
+              <a class="haveIssue">have an issue?</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL ========== -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Pin Access To Admin Page
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label> PIN </label>
+          <input
+            style="color: gray"
+            [(ngModel)]="pinAccess"
+            [ngModelOptions]="{ standalone: true }"
+            class="form-control"
+            placeholder="your pin"
+            type="password"
+          />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+        <button
+          type="button"
+          class="btn"
+          data-bs-dismiss="modal"
+          (click)="GoToAdmin()"
+        >
+          Ok
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

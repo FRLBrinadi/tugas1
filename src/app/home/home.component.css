@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@400;500&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3 ease-in-out;
+}
+
+.judul {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+.btn {
+  background-color: rgb(108, 123, 255);
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(54, 74, 252);
+}
+.container-judul {
+  position: absolute;
+  top: 111%;
+  left: 50%;
+}
+.container-img2 img {
+  position: absolute;
+  top: 90%;
+  left: 7%;
+}
+li {
+  list-style: none;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer {
+  position: absolute;
+  top: 245%;
+  width: 100%;
+  height: auto;
+}
+.footer-col ul li a {
+  color: rgb(108, 123, 255);
+  transition: all 0.3s ease-in-out;
+}
+.footer-col ul li a:hover {
+  color: rgb(54, 74, 252);
+  margin-left: 4px;
+}
+.social-links a svg {
+  margin-right: 15px;
+  width: 25px;
+  height: auto;
+  color: rgb(108, 123, 255);
+  transition: all 0.3s ease-in-out;
+}
+.social-links a svg:hover {
+  color: rgb(54, 74, 252);
+  margin-left: 10px;
+}
+
+.container-img img {
+  position: absolute;
+  top: 15%;
+  left: 55%;
+}
+.image-join {
+  position: absolute;
+  top: 170%;
+  left: 55%;
+}
+.joinDc {
+  position: absolute;
+  top: 173%;
+  left: 10%;
+}
+
+.container-judul div ul li.more-button {
+  margin-left: 158px;
+}
+.container-judul div ul li a.btn {
+  background-color: rgb(197, 197, 197);
+  transition: all 0.3s ease-in-out;
+}
+.container-judul div ul li a.btn:hover {
+  background-color: rgb(108, 123, 255);
+}
+.icon-judul div ul li svg {
+  background-color: rgb(197, 197, 197);
+  transition: all 0.3s ease-in-out;
+  margin: 3px;
+  padding: 7px;
+  border-radius: 3px;
+  color: white;
+}
+.icon-judul div ul li svg.streaming-icon {
+  margin-left: 55px;
+  transition: all 0.3s ease-in-out;
+}
+.icon-judul div ul li svg.streaming-icon:hover {
+  margin-left: 65px;
+}
+.icon-judul {
+  margin-top: 40px;
+}
+.icon-judul div ul li svg:hover {
+  background-color: rgb(108, 123, 255);
+  margin-left: 10px;
+}
+.container nav div ul.premium-content {
+  /* position: absolute;
+  left: 90%; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+.prem-text {
+  margin-right: 17px;
+  color: rgb(250, 169, 19);
+}
+.prem-text:hover {
+  color: rgb(197, 197, 197);
+}
+.container nav div ul li svg.bi {
+  margin-left: 7px;
+  color: rgb(250, 169, 19);
+}
+.ptList {
+  position: absolute;
+  top: 112%;
+  left: 40%;
+}
+.ptList ul li p.tahun {
+  margin-right: 4px;
+}
+.ptList ul li svg {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+.joinDc div.buttonJoin {
+  margin: 0;
+  padding: 0;
+}
+
+.buttonJoin ul li.joinDiscord {
+  justify-content: start;
+  margin-left: 60px;
+}
+.buttonJoin ul li.seeFeatures {
+  margin-left: 42px;
+}
+.icon-judul div ul li.moderation {
+  margin-left: 25px;
+}
+.icon-judul div ul li.rank {
+  margin-left: 25px;
+}
+
+/* Login */
+/* icon */

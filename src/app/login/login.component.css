@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins:wght@400;500&display=swap");
+* {
+  font-family: Poppins, sans-serif;
+  list-style: none;
+}
+.card {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 27%;
+  left: 13%;
+}
+.card-header {
+  background-color: rgb(108, 123, 255);
+  color: white;
+}
+.container-img {
+  position: absolute;
+  top: 23%;
+  left: 44%;
+}
+.btn {
+  width: 100%;
+  height: auto;
+  background-color: rgb(108, 123, 255);
+  color: white;
+}
+.row {
+  margin-top: 12px;
+}
+.card div ul li a.forgot {
+  font-size: small;
+  margin-left: 5px;
+}
+.forReg ul li a {
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+.forReg ul {
+  margin: 0;
+  padding: 0;
+}
+.forReg ul li a.register {
+  margin-left: 105px;
+}
+.btn:hover {
+  background-color: rgb(54, 74, 252);
+}
+.me {
+  font-size: 14px;
+}
+.remember {
+  height: 15px;
+}
+.prem-text {
+  margin-right: 17px;
+  color: rgb(250, 169, 19);
+  text-decoration: none;
+}
+.prem-text:hover {
+  color: rgb(197, 197, 197);
+}
+.container nav div ul li svg.bi {
+  margin-left: 7px;
+  color: rgb(250, 169, 19);
+}
+.container nav div ul.premium-content {
+  /* position: absolute;
+  left: 90%; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}

@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "influx-id": {
+      "hosting": {
+        "influx.com": [
+          "influx-id"
+        ]
+      }
+    },
+    "influx-crud": {
+      "hosting": {
+        "influx.com": [
+          "influx-crud"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "influx-crud"
+  }
+}

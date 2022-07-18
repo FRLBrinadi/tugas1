@@ -1,0 +1,122 @@
+<div class="d-flex justify-content-evenly mainBox">
+  <!-- ========== TABLE CARD ========== -->
+  <div class="card card1">
+    <div class="card-header text-center fs-3 fw-bold">Admin</div>
+    <table class="table card-body">
+      <!-- <thead class=""> -->
+      <!-- <tr>
+          <th><p>Name</p></th>
+          <th><p>Email</p></th>
+          <th><p>Password</p></th>
+        </tr> -->
+      <!-- </thead> -->
+      <tbody
+        class="table_body"
+        *ngFor="let item of contactList"
+        (click)="setModel(item)"
+      >
+        <tr>
+          <td>
+            <div class="con_item">{{ item.name }}</div>
+          </td>
+          <td>
+            <div class="con_item">{{ item.email }}</div>
+          </td>
+          <td>
+            <div class="con_item">{{ item.password }}</div>
+          </td>
+          <td>
+            <ul class="d-flex mx-3 icon">
+              <li>
+                <i
+                  class="bx bxs-edit icon__edit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#editModal"
+                  (click)="Editrecord(item)"
+                ></i>
+              </li>
+              <li>
+                <i class="bx bx-x icon__edit" (click)="Deletedata(item.id)"></i>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ========== MODAL ==========  -->
+  <div
+    class="modal fade"
+    id="editModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Contact</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="card2">
+            <div class="card-body">
+              <p class="mx-1 my-0">Name</p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  [(ngModel)]="contact.name"
+                  class="form-control"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <p class="mx-1 my-0">e-mail</p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  [(ngModel)]="contact.email"
+                  class="form-control"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <p class="mx-1 my-0">Password</p>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  [(ngModel)]="contact.password"
+                  class="form-control"
+                  aria-label="Password"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="link">
+                <div class="d-flex justify-content-between"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </a>
+          <a
+            type="button"
+            class="btn btn-primary"
+            data-bs-dismiss="modal"
+            (click)="Updatedata()"
+          >
+            Update
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
